@@ -38,6 +38,10 @@ document.getElementById("calculateAverage").onclick = function() {
 document.getElementById("convertCurrency").onclick = function() {
     var usd = parseFloat(document.getElementById("usd").value);
     var vnd = usd * 23500;
+
+    // format VND
+    var formatVND = new Intl.NumberFormat("vn-VN");
+    var vndFormatted = formatVND.format(vnd);
     
     // add the title
     var title = document.createElement("h2");
@@ -46,7 +50,7 @@ document.getElementById("convertCurrency").onclick = function() {
 
     // add VND to the div noti
     var tagVND = document.createElement("h3");
-    tagVND.innerHTML = vnd;
+    tagVND.innerHTML = vndFormatted;
     document.getElementById("notiConvert").appendChild(tagVND);
 }
 
