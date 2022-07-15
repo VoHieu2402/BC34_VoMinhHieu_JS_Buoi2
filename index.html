@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Javascript-Homework</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Bài tập 1 -->
+    <div class="task1">
+      <div class="container">
+        <h3>Bài tập 1: Ứng dụng tính lương</h3>
+        <div class="d-flex justify-content-center">
+          <div class="card w-50">
+            <div class="card-header bg-dark text-white text-center">
+              Tính Tiền Lương
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <p>Tiền lương 1 ngày</p>
+                <input type="number" class="form-control" id="dailySalary" />
+              </div>
+              <div class="form-group">
+                <p>Số ngày làm việc</p>
+                <input type="number" class="form-control" id="workingDays" />
+              </div>
+            </div>
+            <div class="card-footer text-center">
+              <button class="btn btn-secondary" id="calculateSalary">
+                Tính Tiền
+              </button>
+              <div class="mt-4" id="notiSalary"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bài tập 2 -->
+    <div class="task2 mt-5">
+      <div class="container">
+        <h3>Bài tập 2: Ứng dụng tính trung bình cộng 5 số thực</h3>
+        <div class="d-flex justify-content-center">
+          <div class="card w-50">
+            <div class="card-header bg-dark text-white text-center">
+              Tính Trung Bình Cộng
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <p>Nhập số 1</p>
+                <input type="number" class="form-control" id="number1" />
+              </div>
+              <div class="form-group">
+                <p>Nhập số 2</p>
+                <input type="number" class="form-control" id="number2" />
+              </div>
+              <div class="form-group">
+                <p>Nhập số 3</p>
+                <input type="number" class="form-control" id="number3" />
+              </div>
+              <div class="form-group">
+                <p>Nhập số 4</p>
+                <input type="number" class="form-control" id="number4" />
+              </div>
+              <div class="form-group">
+                <p>Nhập số 5</p>
+                <input type="number" class="form-control" id="number5" />
+              </div>
+            </div>
+            <div class="card-footer text-center">
+              <button class="btn btn-secondary" id="calculateAverage">
+                Tính
+              </button>
+              <div class="mt-4" id="notiAvg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bài tập 3 -->
+    <div class="task3 mt-5">
+      <div class="container">
+        <h3>Bài tập 3: Ứng dụng quy đổi tiền USD -> VND</h3>
+        <div class="d-flex justify-content-center">
+          <div class="card w-50">
+            <div class="card-header bg-dark text-white text-center">
+              Quy Đổi Tiền
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <p>USD</p>
+                <input type="number" class="form-control" id="usd" />
+              </div>
+            </div>
+            <div class="card-footer text-center">
+              <button class="btn btn-secondary" id="convertCurrency">
+                Quy đổi
+              </button>
+              <div class="mt-4" id="notiConvert"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bài tập 4 -->
+    <div class="task1 mt-5">
+      <div class="container">
+        <h3>Bài tập 4: Ứng dụng tính diện tích, chu vi HCN</h3>
+        <div class="d-flex justify-content-center">
+          <div class="card w-50">
+            <div class="card-header bg-dark text-white text-center">
+              Tính Diện tích, Chu vi HCN
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <p>Chiều rộng</p>
+                <input type="number" class="form-control" id="width-rec" />
+              </div>
+              <div class="form-group">
+                <p>Chiều dài</p>
+                <input type="number" class="form-control" id="height-rec" />
+              </div>
+            </div>
+            <div class="card-footer text-center">
+              <button class="btn btn-secondary" id="calculateRec">Tính</button>
+              <div class="mt-4" id="notiRec"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bài tập 5 -->
+    <div class="task5 mt-5">
+      <div class="container">
+        <h3>Bài tập 5: Ứng dụng tính tổng 2 ký số</h3>
+        <div class="d-flex justify-content-center">
+          <div class="card w-50">
+            <div class="card-header bg-dark text-white text-center">
+              Tính Tổng 2 ký số
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <p>Nhập số</p>
+                <input type="number" class="form-control" id="numTask5" />
+              </div>
+            </div>
+            <div class="card-footer text-center">
+              <button class="btn btn-secondary" id="calculateNumLetter">
+                Tính
+              </button>
+              <div class="mt-4" id="notiTask5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- external js file -->
+    <script src="./javascript/index.js"></script>
+  </body>
+</html>
